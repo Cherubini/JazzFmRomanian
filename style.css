@@ -1,0 +1,50 @@
+*{
+    border: 1px solid crimson;
+    /* display: grid; */
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.grid-header-container{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+    "logo play-stop"
+    ". play-stop"
+    "title play-stop" 
+     ;
+}
+
+.logo{
+    grid-area: logo;
+    display: grid;
+}
+
+.audio-controls{
+    grid-area: play-stop;
+    display: grid;
+}
+
+.title{
+    grid-area: title;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.label, .artist, .song{
+
+}
