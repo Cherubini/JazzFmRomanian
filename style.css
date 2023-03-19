@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Catamaran', sans-serif; font-family: 'Bebas Neue', cursive; */
+
 *{
     border: 1px solid crimson;
     /* display: grid; */
@@ -12,7 +16,7 @@ html, body{
 
 .grid-header-container{
     width: 100vw;
-    height: auto;
+    height: 100vh;
     display: grid;
     background-color: #ffcc00;
     grid-template-columns: repeat(2, 1fr);
@@ -27,15 +31,29 @@ html, body{
 .logo{
     grid-area: logo;
     display: grid;
+    height: 100%;
+}
+
+.logo>a>img{
+    height: 100%;
 }
 
 .audio-controls{
     grid-area: play-stop;
     display: grid;
 }
+.audio-controls>img{
+    width: 100%;
+}
 
 .title{
     grid-area: title;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.artist{
+    font-weight: bold;
+    font-size: 3vh;
 }
 
 .info{
@@ -47,12 +65,16 @@ html, body{
 }
 
 .label{
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.flex-foot-container{
+.flex{
     display: flex;
     flex-direction: row;
+}
+
+.footer-container{
+    
     justify-content: space-evenly;
     height: 70vh;
     width: 100%;
@@ -65,13 +87,82 @@ margin-bottom: 10px;
     justify-content: center;
     align-items: center;
 }
-.right{
+
+.right-footer{
     background-color: #ff3333;
 }
 
-.left{
+.left-footer{
     background-color: #660099; 
 }
+
+.img-section{
+    background-color: #660099;
+}
+
+.blue-sheep-bg{
+background-color: #0099ff;
+}
+
+
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+.blue-sheep{
+    width: 70%;
+    margin: 60px;
+}
+
+.two-half{
+    
+    width: 50vw;
+}
+
+.blue-list{
+    padding: 0px 20px;
+}
+
+.blue-list>h2{
+    font-size: 7vw;
+    
+}
+
+.row-list{
+    border-bottom: 1px solid #afafaf;
+    border-top: 1px solid #afafaf;
+    padding: 10px 0px;
+}
+.names{
+    font-family: 'Catamaran', sans-serif;
+    color: #e6e4e4;
+    font-weight: 300;
+    font-size: 2.3vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts{
+    background-color: #ffcc00;
+}
+
+.contact{
+    height: 1.5em;
+    padding-top: 2vh;
+    margin: 0px;
+    font-size: 20.36vw;
+    line-height: 15vw;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
 footer>div>div>img{
     width: 40%;
+}
+
+.blackball{
+    display: flex;
+    justify-content: right;
 }
